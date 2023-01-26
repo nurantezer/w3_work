@@ -22,4 +22,18 @@ document.getElementById("demo").innerHTML = `${toCelsius} dir`
 const printHello = () => ("hello");
 document.getElementById("demo").innerHTML = printHello()
 
-
+//*expression
+const x = function (a,b){
+    return a * b
+}
+document.getElementById("demo").innerHTML = x(4,9)
+//*Yukarıdaki işlev aslında anonymous function (adsız bir fonksiyon). 
+//*Değişkenlerde depolanan fonksiyonlar, fonksiyon adlarına ihtiyaç duymaz. 
+//*Her zaman değişken adı kullanılarak çağrılır (çağrılır).
+const myFonc = (x,y) => {
+    if( y === undefined){
+        y = 2;
+    }
+    return x*y;
+}
+document.getElementById("demo").innerHTML = myFonc(4)
